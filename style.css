@@ -1,0 +1,196 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(65, 65, 65);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+header {
+  background-image: url("https://rare-gallery.com/mocahbig/81478-city-artist-artwork-digital-art-hd-4k-5k-8k.jpg");
+  filter: brightness(40%);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.countdown-timer {
+  position: absolute;
+  top: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.countdown-timer>p{
+  margin: 0;
+  color:rgba(91, 39,121, 1);
+}
+
+#days, #hours, #minutes, #seconds {
+  padding: 0 10px;
+}
+
+nav {
+  display:flex;
+  width: 100%;
+  padding-top:20px;
+  padding-right:5ex;
+  justify-content:center;
+  align-self: flex-start;
+}
+
+nav ul {display: flex;}
+
+nav ul li {list-style: none;}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {color: rgba(255, 1,172, 1);
+
+}
+
+
+.header-text h1 {
+  font-size: 6em;
+}
+
+.header-text p {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.header-text a.btn {
+  background-color:rgba(255, 1,172, 1);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-text a.btn:hover {
+  background-color: transparent;
+  color: rgba(20, 194,254, 1);
+  border: 3px solid rgba(255, 1,172, 1);
+}
+main {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+section table thead th {
+  border-bottom: 2px solid rgba(20, 194,254, 1);
+  padding: 10px;
+  font-size: 18px;
+}
+
+section table tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+}
+
+section #speakers {
+  display: flex;
+  justify-content: space-around;
+}
+
+section #speakers .speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section #speakers .speaker img {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+section #speakers .speaker h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section #sponsors {
+  display: flex;
+  justify-content: space-around;
+}
+
+section #sponsors img {
+  width: 200px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display:flex;
+  justify-content:space-between;
+}
+footer .footer-right a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-right a:hover {
+  color: rgba(20, 194,254, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .countdown-timer {
+    left: 5%;
+    right: 5%;
+    transform: none;
+    top: 15%;
+  }
+  .header-text{
+    margin-top: 5%;
+  }
+}
